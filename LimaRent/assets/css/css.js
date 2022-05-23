@@ -56,15 +56,15 @@ const css = StyleSheet.create({
   },
 
   round_btn: {
-    marginTop: 20,
-    width: '30%',
-    height: 60,
+    marginTop: 100,
+    width: 120,
+    height: 120,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 10,
     borderRadius: 100,
     backgroundColor: '#99FF33',
     flexDirection: 'row',
+    margin: 9,
   },
 
   round_btnRow: {
@@ -81,6 +81,29 @@ const css = StyleSheet.create({
   background_Entry: {
     flex: 1,
     backgroundColor: '#FFF',
+  },
+
+  profilePic: {
+    width: 250,
+    height: 250,
+    alignSelf: 'center',
+    marginTop: 50,
+  },
+
+  profileMenuBtn: {
+    marginTop: 5,
+    width: '100%',
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#99FF33',
+    flexDirection: 'row',
+  },
+
+  welcome: {
+    fontSize: 45,
+    alignSelf: 'center',
+    marginTop: 15,
   },
 });
 

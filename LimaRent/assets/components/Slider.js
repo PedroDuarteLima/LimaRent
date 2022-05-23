@@ -38,7 +38,7 @@ export default class Slider extends React.Component {
 }
 
 const style = StyleSheet.create({
-  container: { marginTop: 50, width, height },
+  container: { marginTop: 100, width, height },
   scroll: { width, height },
   image: { width, height, resizeMode: 'cover' },
   pagination: { flexDirection: 'row', position: 'absolute', bottom: 0, alignSelf: 'center' },

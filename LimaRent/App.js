@@ -8,7 +8,9 @@ import Entry from './views/afterLogin/Entry';
 import Frota from './views/afterLogin/Frota';
 import Profile from './views/afterLogin/Profile';
 import Reservar from './views/afterLogin/Reservar';
-//import { Entry, Frota, Profile, Reservar } from './views/afterLogin';
+import Documentos from './views/profileOptions/Documentos';
+import Politicas from './views/profileOptions/Politicas';
+import Termos from './views/profileOptions/Termos';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -22,8 +24,11 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Entry" options={{ headerShown: false }} component={Entry} />
         <Stack.Screen name="Frota" component={Frota} />
-        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Profile" options={{ headerShown: false }} component={Profile} />
         <Stack.Screen name="Reservar" component={Reservar} />
+        <Stack.Screen name="Documentos" component={Documentos} />
+        <Stack.Screen name="Politicas" component={Politicas} />
+        <Stack.Screen name="Termos" component={Termos} />
       </Stack.Navigator>
     </NavigationContainer>
   );

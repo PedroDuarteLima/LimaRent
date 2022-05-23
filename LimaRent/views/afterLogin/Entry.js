@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, Button, StatusBar, TouchableOpacity } from 'react-native';
+import { Text, View, Button, StatusBar, TouchableOpacity, Image } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { css } from '../../assets/css/css';
 import Slider from '../../assets/components/Slider';

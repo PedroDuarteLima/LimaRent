@@ -79,7 +79,7 @@ export default function Login({ navigation }) {
   }
 
   return (
-    <KeyboardAvoidingView style={[css.container, css.darkbg]}>
+    <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={[css.container, css.darkbg]}>
       <View style={css.login__icon}>
         <Image source={require('../assets/img/icon.png')} />
       </View>
