@@ -113,6 +113,33 @@ const css = StyleSheet.create({
     borderRadius: 15,
     borderBottomColor: '#30e210',
     margin: 5,
+    flexDirection: 'row',
+  },
+
+  cage_un: {
+    borderColor: '#000',
+    borderStyle: 'solid',
+    borderWidth: 10,
+    borderRadius: 15,
+    borderBottomColor: 'red',
+    margin: 5,
+    flexDirection: 'row',
+  },
+
+  info_spreadView: {
+    margin: 5,
+    flexDirection: 'row',
+  },
+
+  info_spreadText: {
+    flex: 1,
+    flexWrap: 'wrap',
+  },
+
+  info_spreadTextBold: {
+    flex: 1,
+    flexWrap: 'wrap',
+    fontWeight: 'bold',
   },
 });
 
