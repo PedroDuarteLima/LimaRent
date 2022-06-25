@@ -11,6 +11,8 @@ import Reservar from './views/afterLogin/Reservar';
 import Documentos from './views/profileOptions/Documentos';
 import Politicas from './views/profileOptions/Politicas';
 import Termos from './views/profileOptions/Termos';
+import addID from './views/profileOptions/addID';
+import addDL from './views/profileOptions/addDL';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -29,6 +31,8 @@ export default function App() {
         <Stack.Screen name="Documentos" component={Documentos} />
         <Stack.Screen name="Politicas" component={Politicas} />
         <Stack.Screen name="Termos" component={Termos} />
+        <Stack.Screen name="addID" options={{ headerShown: false }} component={addID} />
+        <Stack.Screen name="addDL" options={{ headerShown: false }} component={addDL} />
       </Stack.Navigator>
     </NavigationContainer>
   );
