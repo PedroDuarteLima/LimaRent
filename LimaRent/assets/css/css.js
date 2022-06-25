@@ -105,6 +105,15 @@ const css = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 15,
   },
+
+  cage: {
+    borderColor: '#000',
+    borderStyle: 'solid',
+    borderWidth: 10,
+    borderRadius: 15,
+    borderBottomColor: '#30e210',
+    margin: 5,
+  },
 });
 
 export { css };

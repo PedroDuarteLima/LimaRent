@@ -3,7 +3,7 @@ export default tempData = [
     id: 1,
     name: 'Rolha',
     car: 'Renault Twizy',
-    todos: [
+    params: [
       {
         title: 'Localização:',
         info: 'R.Pascoal de Melo',
@@ -30,7 +30,7 @@ export default tempData = [
     id: 2,
     name: 'Jarvas',
     car: 'Renault Twizy',
-    todos: [
+    params: [
       {
         title: 'Localização:',
         info: 'R. Correia Teles',
@@ -57,7 +57,7 @@ export default tempData = [
     id: 3,
     name: 'Marco',
     car: 'BMW i3',
-    todos: [
+    params: [
       {
         title: 'Localização:',
         info: 'Rua da Alfândega',
