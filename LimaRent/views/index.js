@@ -7,7 +7,8 @@ import Profile from './afterLogin/Profile';
 import Documentos from './profileOptions/Documentos';
 import Politicas from './profileOptions/Politicas';
 import Termos from './profileOptions/Termos';
-import addID from './profileOptions/addID';
-import addDL from './profileOptions/addDL';
+import AddID from './profileOptions/AddID';
+import AddDL from './profileOptions/AddDL';
+import InfoCar from './afterLogin/InfoCar';
 
-export { Home, Login, Entry, Frota, Reservar, Profile, Documentos, Politicas, Termos, addID, addDL };
+export { Home, Login, Entry, Frota, Reservar, Profile, Documentos, Politicas, Termos, AddID, AddDL, InfoCar };

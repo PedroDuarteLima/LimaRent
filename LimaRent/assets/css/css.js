@@ -141,6 +141,21 @@ const css = StyleSheet.create({
     flexWrap: 'wrap',
     fontWeight: 'bold',
   },
+
+  img_carWrap: {
+    width: 100,
+    height: 125,
+  },
+
+  view_orient: {
+    alignItems: 'center',
+    alignSelf: 'center',
+    flex: 1,
+  },
+
+  mapBtnFormat: {
+    color: '#30e210',
+  },
 });
 
 export { css };

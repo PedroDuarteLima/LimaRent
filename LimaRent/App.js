@@ -11,8 +11,9 @@ import Reservar from './views/afterLogin/Reservar';
 import Documentos from './views/profileOptions/Documentos';
 import Politicas from './views/profileOptions/Politicas';
 import Termos from './views/profileOptions/Termos';
-import addID from './views/profileOptions/addID';
-import addDL from './views/profileOptions/addDL';
+import AddID from './views/profileOptions/AddID';
+import AddDL from './views/profileOptions/AddDL';
+import InfoCar from './views/afterLogin/InfoCar';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -31,8 +32,9 @@ export default function App() {
         <Stack.Screen name="Documentos" component={Documentos} />
         <Stack.Screen name="Politicas" component={Politicas} />
         <Stack.Screen name="Termos" component={Termos} />
-        <Stack.Screen name="addID" options={{ headerShown: false }} component={addID} />
-        <Stack.Screen name="addDL" options={{ headerShown: false }} component={addDL} />
+        <Stack.Screen name="AddID" options={{ headerShown: false }} component={AddID} />
+        <Stack.Screen name="AddDL" options={{ headerShown: false }} component={AddDL} />
+        <Stack.Screen name="InfoCar" component={InfoCar} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,50 +1,52 @@
 import React from 'react';
-import { Text, View, Image, ScrollView } from 'react-native';
+import { Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
 import { css } from '../../assets/css/css';
 
 export default function Frota({ navigation }) {
   return (
     <ScrollView style={{ height: '100%' }}>
       <View>
-        <View style={css.cage}>
-          <View>
-            <Image style={{ width: 100, height: 125 }} source={require('../../assets/img/car1.jpg')} />
+        <TouchableOpacity onPress={() => navigation.navigate('InfoCar')}>
+          <View style={css.cage}>
+            <View>
+              <Image style={css.img_carWrap} source={require('../../assets/img/car1.jpg')} />
+            </View>
+
+            <View style={css.view_orient}>
+              <View style={css.info_spreadView}>
+                <Text style={css.info_spreadTextBold}>Nome: </Text>
+                <Text style={css.info_spreadText}>Rolha</Text>
+              </View>
+
+              <View style={css.info_spreadView}>
+                <Text style={css.info_spreadTextBold}>Localização: </Text>
+                <Text style={css.info_spreadText}>Rua Pascoal de Melo</Text>
+              </View>
+
+              <View style={css.info_spreadView}>
+                <Text style={css.info_spreadTextBold}>Bateria: </Text>
+                <Text style={css.info_spreadText}>78%</Text>
+              </View>
+
+              <View style={css.info_spreadView}>
+                <Text style={css.info_spreadTextBold}>Lugares: </Text>
+                <Text style={css.info_spreadText}>2</Text>
+              </View>
+
+              <View style={css.info_spreadView}>
+                <Text style={css.info_spreadTextBold}>Autonomia: </Text>
+                <Text style={css.info_spreadText}>71km</Text>
+              </View>
+            </View>
           </View>
-
-          <View style={{ alignItems: 'center', alignSelf: 'center', flex: 1 }}>
-            <View style={css.info_spreadView}>
-              <Text style={css.info_spreadTextBold}>Nome: </Text>
-              <Text style={css.info_spreadText}>Rolha</Text>
-            </View>
-
-            <View style={css.info_spreadView}>
-              <Text style={css.info_spreadTextBold}>Localização: </Text>
-              <Text style={css.info_spreadText}>Rua Pascoal de Melo</Text>
-            </View>
-
-            <View style={css.info_spreadView}>
-              <Text style={css.info_spreadTextBold}>Bateria: </Text>
-              <Text style={css.info_spreadText}>78%</Text>
-            </View>
-
-            <View style={css.info_spreadView}>
-              <Text style={css.info_spreadTextBold}>Lugares: </Text>
-              <Text style={css.info_spreadText}>2</Text>
-            </View>
-
-            <View style={css.info_spreadView}>
-              <Text style={css.info_spreadTextBold}>Autonomia: </Text>
-              <Text style={css.info_spreadText}>71km</Text>
-            </View>
-          </View>
-        </View>
+        </TouchableOpacity>
 
         <View style={css.cage_un}>
           <View>
-            <Image style={{ width: 100, height: 125 }} source={require('../../assets/img/car2.jpg')} />
+            <Image style={css.img_carWrap} source={require('../../assets/img/car2.jpg')} />
           </View>
 
-          <View style={{ alignItems: 'center', alignSelf: 'center', flex: 1 }}>
+          <View style={css.view_orient}>
             <View style={css.info_spreadView}>
               <Text style={css.info_spreadTextBold}>Nome: </Text>
               <Text style={css.info_spreadText}>Jarvas</Text>
@@ -74,10 +76,10 @@ export default function Frota({ navigation }) {
 
         <View style={css.cage_un}>
           <View>
-            <Image style={{ width: 100, height: 125 }} source={require('../../assets/img/car3.jpg')} />
+            <Image style={css.img_carWrap} source={require('../../assets/img/car3.jpg')} />
           </View>
 
-          <View style={{ alignItems: 'center', alignSelf: 'center', flex: 1 }}>
+          <View style={css.view_orient}>
             <View style={css.info_spreadView}>
               <Text style={css.info_spreadTextBold}>Nome: </Text>
               <Text style={css.info_spreadText}>Marco</Text>
@@ -107,10 +109,10 @@ export default function Frota({ navigation }) {
 
         <View style={css.cage}>
           <View>
-            <Image style={{ width: 100, height: 125 }} source={require('../../assets/img/car4.jpg')} />
+            <Image style={css.img_carWrap} source={require('../../assets/img/car4.jpg')} />
           </View>
 
-          <View style={{ alignItems: 'center', alignSelf: 'center', flex: 1 }}>
+          <View style={css.view_orient}>
             <View style={css.info_spreadView}>
               <Text style={css.info_spreadTextBold}>Nome: </Text>
               <Text style={css.info_spreadText}>Borges</Text>
@@ -118,7 +120,7 @@ export default function Frota({ navigation }) {
 
             <View style={css.info_spreadView}>
               <Text style={css.info_spreadTextBold}>Localização: </Text>
-              <Text style={css.info_spreadText}>Av. Padre Anchieta</Text>
+              <Text style={css.info_spreadText}>Rua João Chagas</Text>
             </View>
 
             <View style={css.info_spreadView}>
@@ -140,10 +142,10 @@ export default function Frota({ navigation }) {
 
         <View style={css.cage}>
           <View>
-            <Image style={{ width: 100, height: 125 }} source={require('../../assets/img/car5.jpg')} />
+            <Image style={css.img_carWrap} source={require('../../assets/img/car5.jpg')} />
           </View>
 
-          <View style={{ alignItems: 'center', alignSelf: 'center', flex: 1 }}>
+          <View style={css.view_orient}>
             <View style={css.info_spreadView}>
               <Text style={css.info_spreadTextBold}>Nome: </Text>
               <Text style={css.info_spreadText}>Mário</Text>
@@ -151,7 +153,7 @@ export default function Frota({ navigation }) {
 
             <View style={css.info_spreadView}>
               <Text style={css.info_spreadTextBold}>Localização: </Text>
-              <Text style={css.info_spreadText}>Rua da Atalaia</Text>
+              <Text style={css.info_spreadText}>Praça de Bilene</Text>
             </View>
 
             <View style={css.info_spreadView}>
@@ -173,10 +175,10 @@ export default function Frota({ navigation }) {
 
         <View style={css.cage_un}>
           <View>
-            <Image style={{ width: 100, height: 125 }} source={require('../../assets/img/car6.jpg')} />
+            <Image style={css.img_carWrap} source={require('../../assets/img/car6.jpg')} />
           </View>
 
-          <View style={{ alignItems: 'center', alignSelf: 'center', flex: 1 }}>
+          <View style={css.view_orient}>
             <View style={css.info_spreadView}>
               <Text style={css.info_spreadTextBold}>Nome: </Text>
               <Text style={css.info_spreadText}>Prego</Text>
@@ -184,7 +186,7 @@ export default function Frota({ navigation }) {
 
             <View style={css.info_spreadView}>
               <Text style={css.info_spreadTextBold}>Localização: </Text>
-              <Text style={css.info_spreadText}>Largo da Estação</Text>
+              <Text style={css.info_spreadText}>Rua Isidoro Viana</Text>
             </View>
 
             <View style={css.info_spreadView}>
