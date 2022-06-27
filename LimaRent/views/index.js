@@ -10,5 +10,6 @@ import Termos from './profileOptions/Termos';
 import AddID from './profileOptions/AddID';
 import AddDL from './profileOptions/AddDL';
 import InfoCar from './afterLogin/InfoCar';
+import { UseCamera } from '../assets/components/UseCamera';
 
-export { Home, Login, Entry, Frota, Reservar, Profile, Documentos, Politicas, Termos, AddID, AddDL, InfoCar };
+export { Home, Login, Entry, Frota, Reservar, Profile, Documentos, Politicas, Termos, AddID, AddDL, InfoCar, UseCamera };

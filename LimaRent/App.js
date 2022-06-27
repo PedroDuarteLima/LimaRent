@@ -14,6 +14,7 @@ import Termos from './views/profileOptions/Termos';
 import AddID from './views/profileOptions/AddID';
 import AddDL from './views/profileOptions/AddDL';
 import InfoCar from './views/afterLogin/InfoCar';
+import { UseCamera } from './assets/components/UseCamera';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -35,6 +36,7 @@ export default function App() {
         <Stack.Screen name="AddID" options={{ headerShown: false }} component={AddID} />
         <Stack.Screen name="AddDL" options={{ headerShown: false }} component={AddDL} />
         <Stack.Screen name="InfoCar" component={InfoCar} />
+        <Stack.Screen name="UseCamera" component={UseCamera} />
       </Stack.Navigator>
     </NavigationContainer>
   );

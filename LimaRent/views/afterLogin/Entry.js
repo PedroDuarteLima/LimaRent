@@ -30,7 +30,7 @@ export default function Entry({ navigation }) {
         </TouchableOpacity>
 
         <TouchableOpacity style={css.round_btn} onPress={() => navigation.navigate('Profile')}>
-          <Text style={css.round_btnText}>Profile</Text>
+          <Text style={css.round_btnText}>Perfil</Text>
         </TouchableOpacity>
       </View>
     </View>
